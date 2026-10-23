@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dinov2-cpu
+  namespace: dinoml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dinov2-cpu
+  template:
+    metadata:
+      labels:
+        app: dinov2-cpu
+    spec:
+      imagePullSecrets:
+      - name: gitlab-registry-secret
+      containers:
+      - name: dinov2
+        image: registry.gitlab.com/pvavrina/dinoml/dinov2:cpu-v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: "2"
+            memory: "4Gi"
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
