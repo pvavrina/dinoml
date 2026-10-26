@@ -1,0 +1,11 @@
+# Core deep learning framework
+torch>=2.4.0
+torchvision>=0.19.0
+
+# Experiment tracking and MLOps
+mlflow>=2.15.0
+
+# Data manipulation and analytics
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0

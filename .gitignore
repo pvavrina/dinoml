@@ -1,0 +1,15 @@
+# Python / Virtual Environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# MLflow local data
+mlflow.db
+mlruns/
+.mlflow/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
