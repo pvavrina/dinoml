@@ -2,8 +2,19 @@
 torch>=2.4.0
 torchvision>=0.19.0
 
+# API serving
+fastapi>=0.115.0
+uvicorn>=0.30.0
+python-multipart>=0.0.9
+
 # Experiment tracking and MLOps
-mlflow>=2.15.0
+mlflow>=3.17.0
+
+# Observability and OpenTelemetry
+opentelemetry-api>=1.45.0
+opentelemetry-sdk>=1.45.0
+opentelemetry-exporter-otlp>=1.45.0
+opentelemetry-instrumentation-fastapi>=0.66b0
 
 # Data manipulation and analytics
 pandas>=2.0.0
