@@ -17,7 +17,11 @@ RUN pip install --no-cache-dir \
     fastapi==0.110.0 \
     uvicorn==0.28.0 \
     pillow==10.2.0 \
-    python-multipart==0.0.9
+    python-multipart==0.0.9 \
+    opentelemetry-api==1.45.2 \
+    opentelemetry-sdk==1.45.2 \
+    opentelemetry-exporter-otlp==1.45.2 \
+    opentelemetry-instrumentation-fastapi==0.66b2
 
 COPY main.py /app/main.py
 
